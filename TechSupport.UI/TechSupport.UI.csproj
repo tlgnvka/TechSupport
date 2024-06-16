@@ -1,0 +1,55 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net6.0-windows</TargetFramework>
+		<Nullable>enable</Nullable>
+		<UseWPF>true</UseWPF>
+		<ApplicationIcon>AppIcon.ico</ApplicationIcon>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Remove="AppIco.ico" />
+	  <None Remove="AppIcon.png" />
+	  <None Remove="Resources\Images\AdminImage.png" />
+	  <None Remove="Resources\Images\categories.png" />
+	  <None Remove="Resources\Images\complete.png" />
+	  <None Remove="Resources\Images\config.png" />
+	  <None Remove="Resources\Images\create.png" />
+	  <None Remove="Resources\Images\departments.png" />
+	  <None Remove="Resources\Images\go.png" />
+	  <None Remove="Resources\Images\remove.png" />
+	  <None Remove="Resources\Images\requests.png" />
+	  <None Remove="Resources\Images\SupportImage.png" />
+	  <None Remove="Resources\Images\users.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Content Include="AppIcon.ico" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="DevExpressMvvm" Version="22.1.3" />
+		<PackageReference Include="HandyControls" Version="3.4.2" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\TechSupport.BusinessLogic\TechSupport.BusinessLogic.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Resource Include="Resources\Images\AdminImage.png" />
+	  <Resource Include="Resources\Images\categories.png" />
+	  <Resource Include="Resources\Images\complete.png" />
+	  <Resource Include="Resources\Images\config.png" />
+	  <Resource Include="Resources\Images\create.png" />
+	  <Resource Include="Resources\Images\departments.png" />
+	  <Resource Include="Resources\Images\go.png" />
+	  <Resource Include="Resources\Images\remove.png" />
+	  <Resource Include="Resources\Images\requests.png" />
+	  <Resource Include="Resources\Images\SupportImage.png" />
+	  <Resource Include="Resources\Images\users.png" />
+	</ItemGroup>
+
+</Project>
